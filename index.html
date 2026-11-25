@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App Lock Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff; --text: #16202e; --muted: #55606f; --accent: #4338ca; --rule: #dce3eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11161f; --text: #e6ebf3; --muted: #9aa5b8; --accent: #a5a8ff; --rule: #273041; }
+  }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>App Lock Privacy Policy</h1>
+  <p class="meta">App Lock, by ByteAcre &middot; Effective 20 November 2026 (version 1.0)</p>
+
+  <p>App Lock is a Windows app that asks for a PIN or password before the apps you choose can be opened. This policy explains what information the app uses. In short: <strong>App Lock works only on your PC. It does not collect, send or share any of your data, and it never looks inside your apps.</strong></p>
+
+  <h2>Information the app uses</h2>
+  <ul>
+    <li><strong>Which app a window belongs to.</strong> To know when a locked app is opened, App Lock asks Windows which app's window comes to the front, and the program file or Store package of that window (for example <code>chat.exe</code>). It does this on your PC only and never stores or sends it.</li>
+    <li><strong>The windows of the apps you locked.</strong> While an app is locked, App Lock hides its windows and their taskbar previews and keeps them on the taskbar. It never reads, copies or captures what those windows show, and it never reads the keys you type into other apps.</li>
+    <li><strong>Your PIN or password.</strong> It is stored only as a salted, slow hash (PBKDF2), never as text, and never written to a log. Nobody, including ByteAcre, can read it back. There is no recovery: if you forget it, uninstall and reinstall the app.</li>
+    <li><strong>Apps you can pick from.</strong> When you add an app, App Lock lists your open apps and the apps in your Start menu, with their names and icons, so you can choose. This list is not stored or sent.</li>
+  </ul>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>It does not collect, send or sell any personal information.</li>
+    <li>It does not take screenshots, record your screen or read the content of any app.</li>
+    <li>It has no account, no advertising, no analytics and no tracking.</li>
+    <li>It does not connect to the internet, except that Windows and the Microsoft Store check your license
+      (whether you have bought the app or are in the free trial). That check is done by Microsoft, under the
+      <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
+  </ul>
+
+  <h2>Settings stored on your PC</h2>
+  <p>The app saves your settings (the apps you locked with their names, your unlock rules, the hash of your PIN and the count of wrong tries) in a small file in its own folder on your PC. A small troubleshooting log records when the app started or stopped, settings changes and errors; it never contains your PIN, the names of your apps, window titles, or when apps were opened or unlocked. A list of the windows App Lock is hiding right now is kept so it can show them again after a crash. A random key, protected by Windows for your account, is used to notice if the settings file is changed outside the app. If you use "Forgot your PIN?", the date of that reset is kept so the app can show it. Nothing leaves your PC, and Windows removes all of it when you uninstall the app.</p>
+
+  <h2>Purchases</h2>
+  <p>Purchases are handled entirely by the Microsoft Store. ByteAcre never sees your payment details.</p>
+
+  <h2>Children</h2>
+  <p>The app collects no information from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be published on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Email <a href="mailto:byteacre.support@gmail.com">byteacre.support@gmail.com</a>.</p>
+
+  <footer>&copy; 2026 ByteAcre</footer>
+</main>
+</body>
+</html>
